@@ -18,7 +18,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'None') {
     return `## License
-    This application is covered by the ${license} license.`
+  This application is covered by the ${license} license.`
   } else {return ''}
 }
 
@@ -26,8 +26,11 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   
  return README = `# ${data.title}
+
   ${renderLicenseBadge(data.license)}
+
   ## Table of Contents
+
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -36,19 +39,25 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
   ## Description
-    ${data.description}
+
+  ${data.description}
   ## Installation
-    ${data.installation}
+
+  ${data.installation}
   ## Usage
-    ${data.usage}
+
+  ${data.usage}
   ${renderLicenseSection(data.license)}
   ## Contributing
-    ${data.contribution}
+
+  ${data.contribution}
   ## Tests
-    ${data.tests}
+
+  ${data.tests}
   ## Questions
-    [GitHub](https://github.com/${data.username})
-    Send any questions to ${data.email}
+
+  [GitHub](https://github.com/${data.username}) <br>
+  Send any questions to ${data.email}
 `;
 }
 
