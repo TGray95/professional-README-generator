@@ -21,6 +21,7 @@
 
   Navigate to application directory, then run 'node index.js' to invoke application. Answer user prompts to provide relevant information about your project. When all prompts have been answered, a README.md file will be automatically generated and can be used for your project repository. The generated README will be located in the user-README folder.
   
+  [Video Demonstration](https://app.castify.com/view/c371fd8e-bf11-4c25-b6f2-8ba68de8f897)
   ## Contributing
 
   N/A
